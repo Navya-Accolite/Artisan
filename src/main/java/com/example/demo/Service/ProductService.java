@@ -16,4 +16,9 @@ public class ProductService {
         List<Products> user= productsRepository.findAll();
         return user;
     }
+
+    public Products postProducts(Products products){
+        return productsRepository.save(products);
+    }
 }
+
